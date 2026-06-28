@@ -2150,7 +2150,7 @@ __metadata:
   resolution: "@calcom/base@workspace:packages/platform/examples/base"
   dependencies:
     "@calcom/atoms": "workspace:*"
-    "@playwright/test": "npm:1.57.0"
+    "@playwright/test": "npm:1.61.0"
     "@prisma/client": "npm:6.16.1"
     "@tailwindcss/postcss": "npm:4.1.15"
     "@types/node": "npm:20.17.23"
@@ -2357,7 +2357,7 @@ __metadata:
   resolution: "@calcom/embed-core@workspace:packages/embeds/embed-core"
   dependencies:
     "@biomejs/biome": "npm:2.3.10"
-    "@playwright/test": "npm:1.57.0"
+    "@playwright/test": "npm:1.61.0"
     "@tailwindcss/cli": "npm:4.1.16"
     "@tailwindcss/postcss": "npm:4.1.15"
     "@vitejs/plugin-basic-ssl": "npm:2.1.0"
@@ -2377,7 +2377,7 @@ __metadata:
   dependencies:
     "@calcom/embed-core": "workspace:*"
     "@calcom/embed-snippet": "workspace:*"
-    "@playwright/test": "npm:1.57.0"
+    "@playwright/test": "npm:1.61.0"
     "@types/react": "npm:18.0.26"
     "@types/react-dom": "npm:18.2.6"
     "@vitejs/plugin-react": "npm:5.1.2"
@@ -3337,7 +3337,7 @@ __metadata:
     "@next-auth/prisma-adapter": "npm:1.0.4"
     "@next/bundle-analyzer": "npm:16.1.5"
     "@next/third-parties": "npm:14.2.5"
-    "@playwright/test": "npm:1.57.0"
+    "@playwright/test": "npm:1.61.0"
     "@prisma/nextjs-monorepo-workaround-plugin": "npm:6.16.1"
     "@radix-ui/react-avatar": "npm:1.1.3"
     "@radix-ui/react-collapsible": "npm:1.0.3"
@@ -10623,14 +10623,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.57.0":
-  version: 1.57.0
-  resolution: "@playwright/test@npm:1.57.0"
+"@playwright/test@npm:1.61.0":
+  version: 1.61.0
+  resolution: "@playwright/test@npm:1.61.0"
   dependencies:
-    playwright: "npm:1.57.0"
+    playwright: "npm:1.61.0"
   bin:
     playwright: cli.js
-  checksum: 10/07f5ba4841b2db1dea70d821004c5156b692488e13523c096ce3487d30f95f34ccf30ba6467ece60c86faac27ae382213b7eacab48a695550981b2e811e5e579
+  checksum: 10/359a9a4a59a87361d416818966bb810a38970d9f2b8364349d22099fb23eb043530714374a83010f9f3471c7e758df43c49bf32128745af13277adfb211aa752
   languageName: node
   linkType: hard
 
@@ -19431,7 +19431,7 @@ __metadata:
     "@changesets/cli": "npm:2.29.4"
     "@faker-js/faker": "npm:9.2.0"
     "@jetstreamapp/soql-parser-js": "npm:6.1.0"
-    "@playwright/test": "npm:1.57.0"
+    "@playwright/test": "npm:1.61.0"
     "@prisma/internals": "npm:6.16.2"
     "@snaplet/copycat": "npm:4.1.0"
     "@testing-library/jest-dom": "npm:5.17.0"
@@ -19441,6 +19441,7 @@ __metadata:
     c8: "npm:7.13.0"
     checkly: "npm:latest"
     dotenv-checker: "npm:1.1.5"
+    ffast-replay: "portal:../lib"
     husky: "npm:9.1.7"
     i18n-unused: "npm:0.13.0"
     jest-diff: "npm:29.7.0"
@@ -19958,6 +19959,13 @@ __metadata:
   version: 1.3.1
   resolution: "cjs-module-lexer@npm:1.3.1"
   checksum: 10/6629188d5ce74b57e5dce2222db851b5496a8d65b533a05957fb24089a3cec8d769378013c375a954c5a0f7522cde6a36d5a65bfd88f5575cb2de3176046fa8e
+  languageName: node
+  linkType: hard
+
+"clarity-js@npm:^0.7.6":
+  version: 0.7.70
+  resolution: "clarity-js@npm:0.7.70"
+  checksum: 10/8070a4574cd702b9c6561ca3a726397eec34e38d43c37b680af2bea22d095beb7fe01c06a03534c400e5303308e90a829164489edb04fc3a27028dc96280c05a
   languageName: node
   linkType: hard
 
@@ -24072,6 +24080,15 @@ __metadata:
   checksum: 10/fc8a4b54574736fca1711c550dba3fe55f6a42291700078d202c405527d6d5c9745de61cfbe673867f519046bef75fe950fe5fedcd4681d710bdd06860cfe5b2
   languageName: node
   linkType: hard
+
+"ffast-replay@portal:../lib::locator=calcom-monorepo%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "ffast-replay@portal:../lib::locator=calcom-monorepo%40workspace%3A."
+  dependencies:
+    clarity-js: "npm:^0.7.6"
+    node-fetch: "npm:^2.7.0"
+  languageName: node
+  linkType: soft
 
 "fflate@npm:^0.4.8":
   version: 0.4.8
@@ -33815,27 +33832,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.57.0":
-  version: 1.57.0
-  resolution: "playwright-core@npm:1.57.0"
+"playwright-core@npm:1.61.0":
+  version: 1.61.0
+  resolution: "playwright-core@npm:1.61.0"
   bin:
     playwright-core: cli.js
-  checksum: 10/ec066602f0196f036006caee14a30d0a57533a76673bb9a0c609ef56e21decf018f0e8d402ba2fb18251393be6a1c9e193c83266f1670fe50838c5340e220de0
+  checksum: 10/e7ac4b2ef1c5f1701ec8086e47bc341988a3f753009d450e2a62daab5ade1fa943f1ef7fb48c721618dd7bd42667a11ff73c2e5dbd0674c20a3397b3c5be2f61
   languageName: node
   linkType: hard
 
-"playwright@npm:1.57.0":
-  version: 1.57.0
-  resolution: "playwright@npm:1.57.0"
+"playwright@npm:1.61.0":
+  version: 1.61.0
+  resolution: "playwright@npm:1.61.0"
   dependencies:
     fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.57.0"
+    playwright-core: "npm:1.61.0"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: 10/241559210f98ef11b6bd6413f2d29da7ef67c7865b72053192f0d164fab9e0d3bd47913b3351d5de6433a8aff2d8424d4b8bd668df420bf4dda7ae9fcd37b942
+  checksum: 10/b5faf97391315334a30e88e03216fd6090988b99896e71b341995a27c49d49dcebc825ec389dabc9b2d2cab6368c418cad9cbb925a88de35fb3b26a19bf05bea
   languageName: node
   linkType: hard
 

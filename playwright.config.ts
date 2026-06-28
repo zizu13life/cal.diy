@@ -96,7 +96,7 @@ const config: PlaywrightTestConfig = {
   retries: process.env.CI ? 2 : 0,
   // While debugging it should be focused mode
   // eslint-disable-next-line turbo/no-undeclared-env-vars
-  workers: process.env.PWDEBUG ? 1 : os.cpus().length,
+  workers: process.env.PWDEBUG ? 1 : 2,
   timeout: DEFAULT_TEST_TIMEOUT,
   maxFailures: headless ? 10 : undefined,
   fullyParallel: true,
@@ -106,7 +106,7 @@ const config: PlaywrightTestConfig = {
     ["junit", { outputFile: "./test-results/reports/results.xml" }],
   ],
   outputDir: path.join(outputDir, "results"),
-  webServer,
+  webServer: process.env.SKIP_WEBSERVER ? undefined : webServer,
   use: {
     baseURL: process.env.NEXT_PUBLIC_WEBAPP_URL,
     locale: "en-US",
@@ -157,7 +157,7 @@ const config: PlaywrightTestConfig = {
       },
       testMatch: /.*\.e2e\.tsx?/,
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore TS definitions for USE are wrong.
+      // @tsdefineConfig-ignore TS definitions for USE are wrong.
       use: {
         ...DEFAULT_CHROMIUM,
         baseURL: "http://localhost:3101/",

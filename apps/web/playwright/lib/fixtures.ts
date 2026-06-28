@@ -1,5 +1,5 @@
 import type { Page } from "@playwright/test";
-import { test as base } from "@playwright/test";
+import { test as base } from "ffast-replay";
 // eslint-disable-next-line no-restricted-imports
 import { noop } from "lodash";
 
